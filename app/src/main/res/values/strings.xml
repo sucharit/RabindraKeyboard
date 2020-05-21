@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RabindraKeyboard</string>
+    <string name="simple_ime">Bangla</string>
+    <string name="subtype_bn_IN">Bengali (India)</string>
+</resources>
