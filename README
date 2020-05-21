@@ -25,6 +25,9 @@ Method 2. From the source.
 3. (Optional) Inspect or modify the source to suit your need.
 4. Make yourself a "Developer" for your device, enable "Debugging via USB", connect device to computer via USB, and using Android Studio, install the package to your device through Android Studio.
 
+Note:
+If you have an older version of the App already installed, the above procedures should overwrite that installation. However, if there are issues, uninstall the older version first before installing. When uninstalling, use the option of "Uninstall for all users".
+
 ========
 
 Activation:
