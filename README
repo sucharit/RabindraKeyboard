@@ -14,7 +14,7 @@ Installation:
 Method 1. Directly from the binary file.
 
 1. Enable installation from "Unknown sources" on your Android device. (You might need to make yourself a "Developer" for your device first.)
-2. Download the binary file app/build/outputs/apk/debug/app-debug.apk to your Android device, and click to install it.
+2. Download the binary file app/release/app-release.apk to your Android device, and click to install it.
 3. You will receive several warnings about the app being from an unknown source. You have to ignore all of those warnings.
 4. Even after installation, there wil be a warning that the Keyboard can store your keypresses; that is a standard Android warning. This keyboard does not store any information.
 
