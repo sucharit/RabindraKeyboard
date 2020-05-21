@@ -1,0 +1,72 @@
+This is a phonetic keyboard for typing Bengali on Android devices.
+
+========
+
+This code is covered under GNU GPLv3; for details, see the file LICENCE. In summary, you may inspect, modify, and redistribute the code at your free will, as long as you include your source files and preserve the following copyright notice.
+
+Copyright (C) 2020 Sucharit Sarkar.
+Contact: sucharit@math.ucla.edu
+
+========
+
+Installation:
+
+Method 1. Directly from the binary file.
+
+1. Enable installation from "Unknown sources" on your Android device. (You might need to make yourself a "Developer" for your device first.)
+2. Download the binary file app/build/outputs/apk/debug/rabindra.apk to your Android device, and click to install it.
+3. You will receive several warnings about the app being from an unknown source. You have to ignore all of those warnings.
+4. Even after installation, there wil be a warning that the Keyboard can store your keypresses; that is a standard Android warning. This keyboard does not store any information.
+
+Method 2. From the source.
+
+1. Install Android Studio on your computer.
+2. Download the source from the github repository (or simply git clone the repository) and open it in Android Studio.
+3. (Optional) Inspect or modify the source to suit your need.
+4. Make yourself a "Developer" for your device, enable "Debugging via USB", connect device to computer via USB, and using Android Studio, install the package to your device through Android Studio.
+
+========
+
+Activation:
+
+You need to activate the keyboard by going to "Language and Settings" on your Android device and adding this new keyboard. Once added, any time a text input box appears, there will be a small keyboard sign to the bottom right of your keyboard, which will allow you to switch between the default Android keyboard and this new keyboard.
+
+========
+
+Phonetics:
+
+The keymapping is fairly natural (with some additional shortcuts). The following are some of the features.
+
+--অ is represented by a, not o. Therefore, আ is represented by aa or A, and ও is represented by o.
+--For the longer sounds, type twice or use capital letters, i.e., aa or A for আ, ii or I for ঈ, uu or U for ঊ, and so on.
+--ঋ is represented by Ri.
+--For অ্যা and এ্যা type aA and eA.
+--For the aspirated sounds, use h, eg. kh for খ, gh for ঘ, etc; additional h-presses do not change the letter.
+--For the harder/longer sounds, type in capitals, e.g. T for ট, Th for ঠ, D for ড, N for ণ, R for ড়, J for য.
+--ঙ is Ng, ঞ is Nj.
+--ng is encoded as anuswar if followed by a consonant, otherwise as ঙ্গ. 
+--শ, স¸ and ষ are sh, s and S (or Sh), respectively.
+--For hasanta, use `.
+--ব is encoded both as b and as w. Y and y both encode য়, except when they follow a constant, when they encode য-ফলা. The only difference between them is the behavior when following গ: gy is জ্ঞ and gY is গ্য.
+--For juktakkhors, type the consecutive consonants. For example, ndr for ন্দ্র, kt for ক্ত, shr for শ্র.  Therefore, ব-ফলা is w, র-ফলা is r, য-ফলা is y.
+--Some juktakkhors have shortcuts (like gy for জ্ঞ and গ্য use gY). Some extra ones are nj for ঞ্জ, x for ক্ষ (the usual method to enter ক্ষ would have kS). I will
+leave the rest to you to discover for yourself.
+--ঃ is represented by H; for ঁ, use ñ. Both have to be used after a vowel; if used after a consonant, does nothing.
+--It is often useful to disrupt the phonetic transliteration; use #. For example, to type করতে, type kar#te; if you type karte, you get কর্তে; you may also type karate to get করতে, although that is a bit unnatural. This is also needed to write certain combinations. For instance, to write ওই, type o#i, since oi converts to ঐ.
+--To type some strange juktakkhors, you need to type the hasanta explicitly. For example, for ক্হ, type k`h, since kh is খ.
+
+-Some examples.
+
+--বাংলা bAnglA or baanglaa
+--রবীন্দ্র rabIndra
+--তৎক্ষণাৎ tat`xaNAt`
+--নমোঽস্তুতে namoostute
+--হ্যাঁ hyAñ
+--তত্ত্বালোচনা tattwAlochanA
+--জিজ্ঞাসা jigyAsA
+--ভাগ্য bhAgYa
+--পরেদ্যবি paredyabi
+--সন্ধ্যার্ঘ্য sandhyArghya
+--কলকাতা kal#kAtA
+
+

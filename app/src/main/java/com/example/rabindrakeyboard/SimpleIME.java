@@ -40,6 +40,7 @@ public class SimpleIME extends InputMethodService
         if(s=="উ"){return true;}
         if(s=="ো"){return true;}
         if(s=="ও"){return true;}
+        if(s=="এ"){return true;}
 
         return false;
     }
@@ -142,7 +143,7 @@ public class SimpleIME extends InputMethodService
                             inpState="";
                         }
                         else if(isVowel(inpState)){
-                            if(inpState=="অ" || inpState=="এ"){scode="্যা";}
+                            if(inpState=="অ" | inpState=="এ"){scode="্যা";}
                             else{scode="আ";}
                             inpState="";
                         }
@@ -159,7 +160,7 @@ public class SimpleIME extends InputMethodService
                             inpState="";
                         }
                         else if(isVowel(inpState)){
-                            inpState="";
+                            inpState="এ";
                             scode="এ";
                         }
                         else {
