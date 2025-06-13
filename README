@@ -41,18 +41,18 @@ Phonetics:
 The keymapping is fairly natural (with some additional shortcuts). The following are some of the features.
 
 --অ is represented by a, not o. Therefore, আ is represented by aa or A, and ও is represented by o.
---For the longer sounds, type twice or use capital letters, i.e., aa or A for আ, ii or I for ঈ, uu or U for ঊ, and so on.
+--For the longer sounds, type twice or use capital letters, i.e., aa or A for আ, ii or I for ঈ, uu or U for ঊ, and so on; in the middle of the word, oo and ee convert to োঽ and েঽ, respectively (these are only used in Sanskrit words). 
 --ঋ is represented by Ri.
 --For অ্যা and এ্যা type aA and eA.
---For the aspirated sounds, use h, eg. kh for খ, gh for ঘ, etc; additional h-presses do not change the letter.
+--For the aspirated sounds, use h, eg. kh for খ, gh for ঘ, etc; additional h-presses do not change the letter; ফ is ph and ভ is bh.
 --For the harder/longer sounds, type in capitals, e.g. T for ট, Th for ঠ, D for ড, N for ণ, R for ড়, J for য.
 --ঙ is Ng, ঞ is Nj.
---ng is encoded as anuswar if followed by a consonant, otherwise as ঙ্গ. 
+--ng is encoded as ং if followed by a consonant, otherwise as ঙ্গ. 
 --শ, স¸ and ষ are sh, s and S (or Sh), respectively.
 --For hasanta, use `.
---ব is encoded both as b and as w. Y and y both encode য়, except when they follow a constant, when they encode য-ফলা. The only difference between them is the behavior when following গ: gy is জ্ঞ and gY is গ্য.
---For juktakkhors, type the consecutive consonants. For example, ndr for ন্দ্র, kt for ক্ত, shr for শ্র.  Therefore, ব-ফলা is w, র-ফলা is r, য-ফলা is y.
---Some juktakkhors have shortcuts (like gy for জ্ঞ and গ্য use gY). Some extra ones are nj for ঞ্জ, x for ক্ষ (the usual method to enter ক্ষ would have kS). I will leave the rest to you to discover for yourself.
+--ব is encoded both as b and as w. Y and y both encode য়, except when they follow a constant, when they encode য-ফলা. The only difference between them is the behavior when following গ or র: gY is জ্ঞ and gy is গ্য, while rY is র‍্য  and ry is র্য.
+--For juktakkhors, type the consecutive consonants. For example, ndr for ন্দ্র, kt for ক্ত, shr for শ্র.  Therefore, ব-ফলা is w, র-ফলা is r, য-ফলা is y/Y.
+--Some juktakkhors have shortcuts (like gY for জ্ঞ and gy for গ্য). Some extra ones are nj for ঞ্জ, x for ক্ষ (the usual method to enter ক্ষ would have kS). I will leave the rest to you to discover for yourself.
 --ঃ is represented by H; for ঁ, use ñ. Both have to be used after a vowel; if used after a consonant, does nothing.
 --It is often useful to disrupt the phonetic transliteration; use #. For example, to type করতে, type kar#te; if you type karte, you get কর্তে; you may also type karate to get করতে, although that is a bit unnatural. This is also needed to write certain combinations. For instance, to write ওই, type o#i, since oi converts to ঐ.
 --To type some strange juktakkhors, you need to type the hasanta explicitly. For example, for ক্হ, type k`h, since kh is খ.
@@ -65,8 +65,8 @@ The keymapping is fairly natural (with some additional shortcuts). The following
 --নমোঽস্তুতে namoostute
 --হ্যাঁ hyAñ
 --তত্ত্বালোচনা tattwAlochanA
---জিজ্ঞাসা jigyAsA
---ভাগ্য bhAgYa
+--জিজ্ঞাসা jigYAsA
+--ভাগ্য bhAgya
 --পরেদ্যবি paredyabi
 --সন্ধ্যার্ঘ্য sandhyArghya
 --কলকাতা kal#kAtA

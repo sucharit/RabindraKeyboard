@@ -15,7 +15,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+    along with RabindraKeyboard.  If not, see <https://www.gnu.org/licenses/>.
 
  */
 
@@ -59,6 +59,7 @@ public class SimpleIME extends InputMethodService
         if(s=="ই"){return true;}
         if(s=="ু"){return true;}
         if(s=="উ"){return true;}
+        if(s=="ে"){return true;}
         if(s=="ো"){return true;}
         if(s=="ও"){return true;}
         if(s=="এ"){return true;}
@@ -181,11 +182,17 @@ public class SimpleIME extends InputMethodService
                             inpState="";
                         }
                         else if(isVowel(inpState)){
-                            inpState="এ";
-                            scode="এ";
+                            if(inpState=="ে") {
+                                scode = "ঽ";
+                                inpState = "";
+                            }
+                            else {
+                                inpState = "এ";
+                                scode = "এ";
+                            }
                         }
                         else {
-                            inpState = "";
+                            inpState = "ে";
                             scode = "ে";
                         }
                         break;
@@ -616,13 +623,19 @@ public class SimpleIME extends InputMethodService
                         scode+="ড়";
                         inpState="ড়";
                         break;
-                    case 'y':
+                    case 'Y':
                         if(!isVowel(inpState)){
                             if(inpState=="গ")
                             {
                                 ic.deleteSurroundingText(1,0);
                                 scode="জ্ঞ";
                                 inpState="ঞ";
+                            }
+                            else if(inpState=="র")
+                            {
+                                scode="\u200C";
+                                scode+="্য";
+                                inpState = "য";
                             }
                             else {
                                 scode = "্য";
@@ -634,7 +647,7 @@ public class SimpleIME extends InputMethodService
                             inpState = "য়";
                         }
                         break;
-                    case 'Y':
+                    case 'y':
                         if(!isVowel(inpState)){
                             scode="্য";
                             inpState="য";
